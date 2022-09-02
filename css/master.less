@@ -1,0 +1,632 @@
+@import "font.css";
+@backgroundColorCustomSearch:gainsboro;
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  direction: rtl;
+  text-align: right;
+  font-family: iransansCustom;
+}
+body{
+  overflow-x: hidden;
+}
+li{
+  list-style: none;
+  cursor: pointer;
+}
+.w-10{
+  width: 10%;
+}
+.transformRotate{
+  transform:rotate(180deg);
+}
+.bg-custom{
+  background-color: #b7445abd;
+}
+.fontItem{
+  font-size: 0.9rem;
+}
+.imageFirstNavbar{
+  img{
+    border-radius: 50%;
+    width: 26%;
+    border: 1px solid lighten(#000,20%);
+
+  }
+}
+.input-group-append-custom{
+  margin-left: 0px !important;
+}
+.searchBox{
+  padding: 0.3rem;
+  background: lighten(@backgroundColorCustomSearch,10%);
+  input{
+    color:darken(@backgroundColorCustomSearch,30%);
+    &:focus{
+      box-shadow: 0 0 0 0.25rem rgb(13 110 253 / 0%);
+    }
+  }
+  .iconBoxSearch{
+    i{
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%,-50%);
+      font-size: 1.3rem;
+      color:darken(@backgroundColorCustomSearch,30%);
+    }
+  }
+}
+.itemNavbarFirst{
+  .labelNavbarFirst{
+    font-size:0.9rem;
+    color:@backgroundColorCustomSearch;
+  }
+  i{
+    font-size: 1.4rem;
+    color:darken(@backgroundColorCustomSearch,10%);
+  }
+  .badgeCustomAttribute{
+    width: 1.1rem;
+    height: 1.1rem;
+    border-radius: 50%;
+    color: #fff;
+    font-size: 0.9rem;
+    top: -38%;
+    right: -10%;
+  }
+}
+.navbarMenuDropdown{
+  transform: translateX(15%);
+  z-index: 111111111111;
+  border: 1px solid #b9b1b1;
+  color: #7a7474;
+  border-radius: 0.6rem;
+  &:before,&:after{
+    content: '';
+    position: absolute;
+    bottom: 100%; left: 49.5%;
+    transform: translateX(-50%);
+    border: 11px solid transparent;
+    border-bottom-color: #dddddd;
+  }
+  &:after{
+    left: 50%;
+    border: 10px solid transparent;
+    border-bottom-color: #ffffff;
+    transform: translateX(-54%);
+  }
+  .iconDropdown{
+    width: 10%;
+  }
+  .labelDropdownItem{
+    font-size: 0.8rem;
+  }
+  .normalLine{
+    height: 1px;
+    background: #cecdcd;
+    width: 70%;
+  }
+}
+.badgeCustomAttribute{
+  &:extend(.itemNavbarFirst .badgeCustomAttribute);
+}
+.carousel-indicators button {
+  border-radius: 50%;
+}
+.carousel-dark .carousel-indicators [data-bs-target] {
+  background-color: transparent;
+  border: 2px solid #fff;
+}
+.carousel-indicators .active {
+  opacity: 1;
+  background-color: #fff !important;
+}
+.carousel-indicators [data-bs-target] {
+  width: 6px;
+  height: 6px;
+}
+.imageCarousel{
+  height: 73vh;
+  object-fit: cover;
+}
+.topCover{
+  height: 12%;
+  background: linear-gradient(to top right, #cdb8b873 , gray);
+}
+.chevronSize{
+  font-size: 1.8rem;
+}
+.carouselCustomCaption{
+  position: absolute;
+  top: 35%;
+  width: 37%;
+  left: 0;
+  height: 17%;
+  padding: 1%;
+  .borderBeautiful{
+    &:after{
+      content: '';
+      position: absolute;
+      width: 4%;
+      height: 23%;
+      border-left: 2px solid transparent;
+      border-top: 2px solid transparent;
+      border-right: 2px solid @backgroundColorCustomSearch;
+      border-bottom: 2px solid @backgroundColorCustomSearch;
+      bottom: -41%;
+      right: 0;
+      opacity: 0.5;
+    }
+    &:before{
+      content: '';
+      position: absolute;
+      width: 4%;
+      height: 23%;
+      border-left: 2px solid @backgroundColorCustomSearch;
+      border-top: 2px solid @backgroundColorCustomSearch;
+      border-right: 2px solid transparent;
+      border-bottom: 2px solid transparent;
+      top: -41%;
+      left: 0;
+      opacity: 0.5;
+    }
+  }
+  .borderBeautifulExtra{
+    &:after{
+      content: '';
+      position: absolute;
+      width: 4%;
+      height: 23%;
+      border-left: 2px solid transparent;
+      border-top: 2px solid @backgroundColorCustomSearch;
+      border-right: 2px solid @backgroundColorCustomSearch;
+      border-bottom: 2px solid transparent;
+      top: -41%;
+      right: 0;
+      opacity: 0.5;
+    }
+    &:before{
+      content: '';
+      position: absolute;
+      width: 4%;
+      height: 23%;
+      border-left: 2px solid @backgroundColorCustomSearch;
+      border-top: 2px solid transparent;
+      border-right: 2px solid transparent;
+      border-bottom: 2px solid @backgroundColorCustomSearch;
+      bottom: -41%;
+      left: 0;
+      opacity: 0.5;
+    }
+  }
+}
+.titleSlidebar{
+  font-size: 1.4rem;
+}
+.sideBarParent{
+  position: relative;
+  &::before{
+    content: '';
+    position: absolute;
+    top: 4rem;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 80%;
+    display: block;
+    height: 93%;
+    border: 1px solid #dda1a1;
+    border-radius: 0.8rem;
+    z-index: -1;
+  }
+  &:after{
+    content: '';
+    position: absolute;
+    width: 30%;
+    display: block;
+    left: 50%; top: 18%;
+    transform: translateX(-50%);
+    height: 79%;
+    border: 0.5px solid #3d3939;
+    border-radius: 0.8rem;
+    opacity: 0.5;
+  }
+}
+.owlCarouselCustom{
+  margin-top: 4%;
+}
+.spacingFromSlider{
+  margin-top: 6%;
+}
+.owl-theme .owl-nav [class*=owl-] {
+  margin: 0 0 0 0;
+  padding: 4px 7px;
+  background: #fff !important;
+  display: inline-block;
+  cursor: pointer;
+  color: #555353 !important;
+  font-size: 2rem;
+  border-radius: 0;
+  transform: translateY(10px);
+}
+.carouselDetail{
+  height: 76%;
+  background: linear-gradient(to top right, #ffffff73, #bf10108a);
+  top: 12%;
+}
+
+.carouselExtra{
+  height: 12%;top: 88%;
+  background: linear-gradient(to top right, #cdb8b873 , gray);
+}
+.test{
+  width: 19rem;
+  height: 22rem;
+  .timer{
+    top: 22.5rem;
+    left: 6rem;
+    font-weight: bold;
+  }
+  &:after{
+    content: '';
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 100%;
+    height: 100%;
+    border-radius: var(--bs-border-radius-xl) !important;
+    background-color:#e39797;
+    transition: opacity 1s ease;
+    opacity: 0;
+  }
+  &:hover{
+    &:after{
+      opacity: 0.7;
+    }
+  }
+}
+.owl-carousel .owl-stage-outer {
+  overflow: unset !important;
+}
+.imageParentSidebar{
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+
+  img{
+    width: 100%;
+    height: 100%;
+  }
+}
+.DetailProductSideBar{
+  z-index: 11111;
+  top: 69%;
+  right: 7%;
+  /* top: 1%; */
+  font-size: 1.1rem;
+}
+.nameProduct{
+  color:#fff
+}
+.teflon{
+  background: linear-gradient(0deg, black, transparent 80%) no-repeat;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+
+}
+.pricesBox{
+  font-size: 1rem;
+  margin-top:6%
+}
+.parentCategoryPic{
+
+  img{
+    width: 95%;
+    height: 87%;
+    display: block;
+    position: relative;
+  }
+
+}
+.cover{
+  top: 0;
+  width: 95%;
+  height: 87%;
+  left: 5%;
+  background: linear-gradient(0deg, #00000075, transparent 31%) no-repeat;
+}
+.advertiseBanner{
+  width: 48%;
+  height: 16rem;
+  font-size: 1.5rem;
+}
+
+.advertiseParent{
+  margin-bottom: 7rem;
+}
+.navbar-toggler:hover {
+  text-decoration: none;
+}
+button:not(:disabled), [type=button]:not(:disabled), [type=reset]:not(:disabled), [type=submit]:not(:disabled) {
+  cursor: pointer;
+}
+button, [type="button"], [type="reset"], [type="submit"] {
+  -webkit-appearance: button;
+}
+
+.navbar-toggler {
+  padding: var(--bs-navbar-toggler-padding-y) var(--bs-navbar-toggler-padding-x);
+  font-size: var(--bs-navbar-toggler-font-size);
+  line-height: 1;
+  color: var(--bs-navbar-color);
+  background-color: #9b919100;
+  border: var(--bs-border-width) solid gainsboro;
+  border-radius: var(--bs-navbar-toggler-border-radius);
+  transition: var(--bs-navbar-toggler-transition);
+}
+.parentWcParent{
+  img{
+    width: 93%;
+  }
+}
+.nameOfProductWc{
+  font-size: 1rem;
+}
+.bannerSectionWc {
+  height: 9%;
+  top: -8%;
+  right: 3%;
+  z-index: -1111;
+  border: 1px solid #DDA1A1;
+}
+.titleOfBanner { justify-content: center;
+  transform: translateY(-53%);
+  background: #fff;
+  font-size: 1.2rem;
+}
+.advertiseSecondBox{
+  height:13rem;
+  width: 32%;
+  font-size: 1.6rem;
+}
+.advertiseSecondPart{
+  margin-bottom: 8%;
+}
+.lastAdvertiseBanner{
+  height:14rem;
+  width: 97%;
+  font-size: 2.5rem;
+  margin-bottom: 8%;
+}
+.extraPropsTitle{
+  height: 9%;
+  top: -6%;
+  right: 3%;
+  position: absolute;
+  z-index: -1111;
+  border: 1px solid #DDA1A1;
+  div{
+    position: absolute;
+    top: -39%;
+    right: 50%;
+    transform: translateX(39%)
+  ; background: #fff;
+    font-size: 1.6rem;
+  }
+}
+.blogCard{
+  width: 31.5%;
+  margin-left: 1%;
+  border: 1px solid rgba(196, 184, 184, 0.68);
+  .parentBlogOic{
+    position: relative;
+    img{
+      width: 100%;
+    }
+    &:after{
+      content: '1401/2/3';
+      position: absolute;
+      bottom: 0;
+      left: 50%;
+      transform: translateX(-50%);
+      height: 34px;
+      width: 121px;
+      border-radius: 180px 186px 0 0;
+      background-color: #fff;
+      text-align: center;
+      line-height: 44px;
+      color: #403737;
+    }
+
+  }
+}
+.spacingLast{
+  margin-bottom: 7%;
+}
+.chevronsGroup {
+  transform: translateY(-31%) translateX(-3%);
+  font-size: 1.3rem;
+  color: gainsboro;
+}
+.lastDesign{
+  height: 36px;
+  border: 1px solid #e78888;
+  border-top-color: transparent;
+  right: 50%; bottom: -6.5%;
+  transform: translateX(50%);
+  z-index: -1111;
+}
+.chevrounGroupFinal{
+  font-size: 1.5rem;
+  color:gainsboro
+}
+.slideBarLastSize{
+  width: 11rem;
+  height: 11rem;
+}
+footer{
+  background: #413c3c;
+  .logoFooter{
+    .logo{
+      width: 150px;
+      height: 150px;
+      background-color: #fff;
+      border-radius: 50%;
+    }
+  }
+}
+.listType{
+  &:before{
+    content: "\2022";
+    color: red;
+    font-weight: bold;
+    display: inline-block;
+    width: 1em;
+    margin-right: -1em;
+  }
+  font-size:0.8rem;
+  margin-top: 3%;
+}
+.headerCategory{
+  font-size: 1rem;
+}
+.line{
+  background: #fff;
+  height: 1px;
+  width: 98%;
+  margin: auto;
+  opacity: 0.5;
+}
+
+.parentSocialMedia{
+  position: relative;
+  width: 50px;
+  height: 50px;
+  background-color: #fff;
+  border-radius: 50%;
+  img{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    width: 80%;
+    height: 80%;
+  }
+}
+.lastFooterSection{
+  width: 98%;
+}
+.formControlCustom{
+  border: 1px solid transparent;
+  &:focus{
+    color: #212529;
+    background-color: #fff;
+    border-color: transparent;
+    outline: 0;
+    box-shadow: 0 0 0 0.25rem rgb(13 110 253 / 0%);
+  }
+}
+.logoFooter{
+  border-radius: 1rem;
+}
+
+
+
+
+
+
+@media screen {
+  @media (max-width: 991px){
+    .titleOfBanner{
+      font-size: 1rem;
+    }
+    .imageFirstNavbar img {
+      width: 3rem;
+    }
+    .searchBox .iconBoxSearch i{
+      font-size: 1rem;
+    }
+    .searchBox{
+      input{
+        padding: 0.135rem 0.75rem;
+      }
+    }
+    .sideBarParent:after {
+      border: 0.5px solid transparent;
+
+    }
+    .nameOfProductWc {
+      font-size: 1rem;
+    }
+    .blogCard {
+      width: 100%;
+    }
+  }
+  .chevronsGroup{
+    transform: translateY(-17%) translateX(-3%);
+    font-size: 1.3rem;
+    color:gainsboro;
+  }
+  .allProduct{
+    text-align: left;
+    transform: translateY(-13%) translateX(14px);
+  }
+  .logoInstagram{
+    width: 2%;
+  }
+  @media(max-width: 768px){
+
+    .chevronsGroup{
+      transform: translateY(-19%);
+    }
+    .allProduct{
+      text-align: left;
+      transform: translateY(-9%) translateX(14px);
+    }
+    .titleOfBanner {
+      font-size: 0.7rem;
+      transform: translateY(-9%);
+    }
+    .advertiseBanner{
+      width: 96%;
+      margin-right: 2%;
+      margin-top:2%;
+    }
+    .nameOfProductWc {
+      font-size: 1rem;
+    }
+    .advertiseSecondBox{
+      width: 90%;
+    }
+    .advertiseSecondPart{
+      margin-bottom: 16%;
+    }
+    .spacingLast{
+      margin-top: 11rem !important;
+    }
+
+    .extraPropsTitle {
+      height: 9%;
+      top: -2%;
+      right: 3%;
+      position: absolute;
+      z-index: -1111;
+      border: 1px solid #DDA1A1;
+      div{
+        position: absolute;
+        top: -19%;
+        right: 50%;
+        transform: translateX(39%);
+        background: #fff;
+        font-size: 1.6rem;
+      }
+    }
+    .lastDesign {
+      bottom: -2%;
+    }
+  }
+}
+

@@ -1,0 +1,827 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <link rel="stylesheet" href="node_modules/bootstrap/dist/css/bootstrap.css">
+    <link rel="stylesheet" href="fontawesome-free-6.2.0-web/css/all.css">
+    <link rel="stylesheet" href="node_modules/normalize.css/normalize.css">
+    <link rel="stylesheet" href="node_modules/owl.carousel2/dist/assets/owl.carousel.min.css">
+    <link rel="stylesheet" href="node_modules/owl.carousel2/dist/assets/owl.theme.default.min.css">
+    <link rel="stylesheet" href="css/master.css">
+
+</head>
+<body>
+<div class="col-12 d-flex justify-content-lg-start justify-content-around align-items-center">
+    <div class="col-lg-2 col-5 mt-2">
+        <div class="imageFirstNavbar me-2">
+            <img src="images/2_thumb_woman.jpg" alt="">
+        </div>
+    </div>
+    <div class="col-lg-6 col-5 rounded-5 searchBox">
+        <div class="col-12">
+            <form action="" method="post">
+                <div class="col-12 d-flex">
+                    <div class="col-11">
+                        <input type="text" class="form-control rounded-0 border-0 bg-transparent">
+                    </div>
+                    <div class="col-1 iconBoxSearch position-relative">
+                        <i class="fas fa-search position-absolute d-block"></i>
+                    </div>
+                </div>
+            </form>
+        </div>
+    </div>
+    <div class="col-lg-4 d-lg-block d-none itemNavbarFirst">
+        <ul class="d-flex justify-content-evenly mt-3 position-relative">
+            <li>
+                <i class="fas fa-phone"></i>
+                <span class="labelNavbarFirst">09393545718</span>
+            </li>
+            <li class="">
+                <i class="fas fa-user"></i>
+                <span class="labelNavbarFirst toggleDropDown">حساب کاربری</span>
+                <div class="col-6 position-absolute bg-white p-2 mt-3 navbarMenuDropdown">
+                    <ul class="p-0">
+                        <li class="d-flex justify-content-evenly">
+                            <svg class="iconDropdown" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><!--! Font Awesome Pro 6.2.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2022 Fonticons, Inc. --><path d="M160 96c17.7 0 32-14.3 32-32s-14.3-32-32-32H96C43 32 0 75 0 128V384c0 53 43 96 96 96h64c17.7 0 32-14.3 32-32s-14.3-32-32-32H96c-17.7 0-32-14.3-32-32l0-256c0-17.7 14.3-32 32-32h64zM504.5 273.4c4.8-4.5 7.5-10.8 7.5-17.4s-2.7-12.9-7.5-17.4l-144-136c-7-6.6-17.2-8.4-26-4.6s-14.5 12.5-14.5 22v72H192c-17.7 0-32 14.3-32 32l0 64c0 17.7 14.3 32 32 32H320v72c0 9.6 5.7 18.2 14.5 22s19 2 26-4.6l144-136z" fill="#7a7474"></path></svg>
+                            <div class="labelDropdownItem">خروج از حساب کاربری</div>
+                        </li>
+                        <li class="col-10 d-block mx-auto mt-2 normalLine"></li>
+                        <li class="d-flex justify-content-evenly mt-2">
+                            <svg class="iconDropdown" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><!--! Font Awesome Pro 6.2.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2022 Fonticons, Inc. --><path d="M362.7 19.3L314.3 67.7 444.3 197.7l48.4-48.4c25-25 25-65.5 0-90.5L453.3 19.3c-25-25-65.5-25-90.5 0zm-71 71L58.6 323.5c-10.4 10.4-18 23.3-22.2 37.4L1 481.2C-1.5 489.7 .8 498.8 7 505s15.3 8.5 23.7 6.1l120.3-35.4c14.1-4.2 27-11.8 37.4-22.2L421.7 220.3 291.7 90.3z" fill="#7a7474"></path></svg>
+                            <div class="labelDropdownItem">عضویت در وبسایت</div>
+                        </li>
+                    </ul>
+
+                </div>
+            </li>
+            <li class="position-relative">
+                <i class="fas fa-shopping-bag"></i>
+                <span class="labelNavbarFirst">سبدخرید</span>
+                <div class="bg-danger position-absolute badgeCustomAttribute text-center">1</div>
+            </li>
+        </ul>
+    </div>
+</div>
+<nav class="navbar navbar-expand-lg bg-custom mt-3">
+    <div class="container-fluid">
+        <button class="navbar-toggler d-lg-none collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <ul class="d-lg-none d-flex mt-3">
+            <li class="text-white mx-3">
+                <i class="fas fa-user"></i>
+                <span class="labelNavbarFirst toggleDropDown">حساب کاربری</span>
+                <div class="col-sm-3 position-absolute bg-white p-2 mt-3 navbarMenuDropdown">
+                    <ul class="p-0">
+                        <li class="d-flex justify-content-evenly">
+                            <svg class="iconDropdown" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><!--! Font Awesome Pro 6.2.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2022 Fonticons, Inc. --><path d="M160 96c17.7 0 32-14.3 32-32s-14.3-32-32-32H96C43 32 0 75 0 128V384c0 53 43 96 96 96h64c17.7 0 32-14.3 32-32s-14.3-32-32-32H96c-17.7 0-32-14.3-32-32l0-256c0-17.7 14.3-32 32-32h64zM504.5 273.4c4.8-4.5 7.5-10.8 7.5-17.4s-2.7-12.9-7.5-17.4l-144-136c-7-6.6-17.2-8.4-26-4.6s-14.5 12.5-14.5 22v72H192c-17.7 0-32 14.3-32 32l0 64c0 17.7 14.3 32 32 32H320v72c0 9.6 5.7 18.2 14.5 22s19 2 26-4.6l144-136z" fill="#7a7474"></path></svg>
+                            <div class="labelDropdownItem">خروج از حساب کاربری</div>
+                        </li>
+                        <li class="col-10 d-block mx-auto mt-2 normalLine"></li>
+                        <li class="d-flex justify-content-evenly mt-2">
+                            <svg class="iconDropdown" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><!--! Font Awesome Pro 6.2.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2022 Fonticons, Inc. --><path d="M362.7 19.3L314.3 67.7 444.3 197.7l48.4-48.4c25-25 25-65.5 0-90.5L453.3 19.3c-25-25-65.5-25-90.5 0zm-71 71L58.6 323.5c-10.4 10.4-18 23.3-22.2 37.4L1 481.2C-1.5 489.7 .8 498.8 7 505s15.3 8.5 23.7 6.1l120.3-35.4c14.1-4.2 27-11.8 37.4-22.2L421.7 220.3 291.7 90.3z" fill="#7a7474"></path></svg>
+                            <div class="labelDropdownItem">عضویت در وبسایت</div>
+                        </li>
+                    </ul>
+
+                </div>
+            </li>
+            <li class="position-relative text-white">
+                <i class="fas fa-shopping-bag"></i>
+                <span class="labelNavbarFirst">سبدخرید</span>
+                <div class="bg-danger position-absolute badgeCustomAttribute text-center">1</div>
+            </li>
+        </ul>
+        <div class="navbar-collapse collapse" id="navbarSupportedContent" style="">
+            <ul class="navbar-nav me-auto mb-2 mb-lg-0 mx-auto">
+                <li class="nav-item mx-auto">
+                    <a class="nav-link text-white fontItem" href="#">ست سرویس بهداشتی</a>
+                </li>
+                <li class="nav-item mx-auto">
+                    <a class="nav-link text-white fontItem" href="#">ست سرویس دسشویی</a>
+                </li>
+                <li class="nav-item mx-auto">
+                    <a class="nav-link text-white fontItem" href="#">صابسوانی</a>
+                </li>
+                <li class="nav-item mx-auto">
+                    <a class="nav-link text-white fontItem" href="#">جاصابونی</a>
+                </li>
+                <li class="nav-item mx-auto">
+                    <a class="nav-link text-white fontItem" href="#">آینه سرویس بهداشتی</a>
+                </li>
+                <li class="nav-item mx-auto">
+                    <a class="nav-link text-white fontItem" href="#">دستگیر و خوشبو کننده</a>
+                </li>
+
+            </ul>
+        </div>
+    </div>
+</nav>
+<div id="carouselExampleDark" class="carousel carousel-dark slide" data-bs-ride="carousel">
+    <div class="carousel-indicators">
+        <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+        <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="1" aria-label="Slide 2"></button>
+        <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="2" aria-label="Slide 3"></button>
+    </div>
+    <div class="carousel-inner">
+        <div class="carousel-item position-relative active" data-bs-interval="10000">
+            <div class="col-12 position-absolute topCover"></div>
+            <div class="col-12 position-absolute carouselDetail"></div>
+            <div class="col-12 position-absolute carouselExtra"></div>
+            <img src="images/2.jpg" class="d-block w-100 imageCarousel" alt="...">
+            <div class="carousel-caption carouselCustomCaption d-none d-md-block">
+                <h5 class="text-white">لورم ایپسوم متن </h5>
+                <p class="text-white">لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم</p>
+                <div class="borderBeautiful"></div>
+                <div class="borderBeautifulExtra"></div>
+            </div>
+        </div>
+        <div class="carousel-item" data-bs-interval="2000">
+            <div class="col-12 position-absolute topCover"></div>
+            <div class="col-12 position-absolute carouselDetail"></div>
+            <div class="col-12 position-absolute carouselExtra"></div>
+            <img src="images/2.jpg" class="d-block w-100 imageCarousel" alt="...">
+            <div class="carousel-caption carouselCustomCaption d-none d-md-block">
+                <h5 class="text-white">لورم ایپسوم متن </h5>
+                <p class="text-white">لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم</p>
+                <div class="borderBeautiful"></div>
+                <div class="borderBeautifulExtra"></div>
+            </div>
+        </div>
+        <div class="carousel-item">
+            <div class="col-12 position-absolute topCover"></div>
+            <div class="col-12 position-absolute carouselDetail"></div>
+            <div class="col-12 position-absolute carouselExtra"></div>
+            <img src="images/2.jpg" class="d-block w-100 imageCarousel" alt="...">
+            <div class="carousel-caption carouselCustomCaption d-none d-md-block">
+                <h5 class="text-white">لورم ایپسوم متن </h5>
+                <p class="text-white">لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم</p>
+                <div class="borderBeautiful"></div>
+                <div class="borderBeautifulExtra"></div>
+            </div>
+        </div>
+    </div>
+    <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleDark" data-bs-slide="prev">
+        <i class="fas fa-chevron-left chevronSize"></i>
+        <span class="visually-hidden">Previous</span>
+    </button>
+    <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleDark" data-bs-slide="next">
+        <i class="fas fa-chevron-right chevronSize"></i>
+        <span class="visually-hidden">Next</span>
+    </button>
+</div>
+<div class="col-12 my-4 position-relative sideBarParent">
+    <div class="titlePart">
+        <h3 class="text-dark text-center titleSlidebar">پیشنهاد های <strong>ویژه</strong></h3>
+        <p class="text-center text-dark">لورم ایپسوم با طرح نما متنی صنعتی در طراحی نعتی گفته میشود</p>
+    </div>
+    <div class="col-12 spacingFromSilider">
+        <div class="owl-carousel owl-theme owlCarouselCustom">
+            <div class="test rounded-4 position-relative">
+                <div class="imageParentSidebar">
+                    <img src="images/categoryPic.jpg" class="rounded-4" alt="">
+                </div>
+                <div class="position-absolute rounded-4 teflon"></div>
+                <div class="DetailProductSideBar position-absolute" style="z-index: 11111">
+                    <span class="nameProduct d-block">ست سرویس بهداشتی مدل تکسوس</span>
+                    <div class="d-flex justify-content-between pricesBox">
+                        <span class="text-white">1400 تومان</span>
+                        <span class="text-white">1200 تومان</span>
+                    </div>
+                    <div class="clone position-absolute"></div>
+                </div>
+                <div class="timer position-absolute text-white">
+
+                    <span class="timeStr text-dark mx-2">24:12:23:54</span><i class="fas fa-clock text-danger"></i>
+                </div>
+            </div>
+            <div class="test rounded-4 position-relative">
+                <div class="imageParentSidebar">
+                    <img src="images/categoryPic.jpg" class="rounded-4" alt="">
+                </div>
+                <div class="position-absolute rounded-4 teflon"></div>
+                <div class="DetailProductSideBar position-absolute" style="z-index: 11111">
+                    <span class="nameProduct d-block">ست سرویس بهداشتی مدل تکسوس</span>
+                    <div class="d-flex justify-content-between pricesBox">
+                        <span class="text-white">1400 تومان</span>
+                        <span class="text-white">1200 تومان</span>
+                    </div>
+                    <div class="clone position-absolute"></div>
+                </div>
+                <div class="timer position-absolute text-white">
+
+                    <span class="timeStr text-dark mx-2">24:12:23:54</span><i class="fas fa-clock text-danger"></i>
+                </div>
+            </div>
+            <div class="test rounded-4 position-relative">
+                <div class="imageParentSidebar">
+                    <img src="images/categoryPic.jpg" class="rounded-4" alt="">
+                </div>
+                <div class="position-absolute rounded-4 teflon"></div>
+                <div class="DetailProductSideBar position-absolute" style="z-index: 11111">
+                    <span class="nameProduct d-block">ست سرویس بهداشتی مدل تکسوس</span>
+                    <div class="d-flex justify-content-between pricesBox">
+                        <span class="text-white">1400 تومان</span>
+                        <span class="text-white">1200 تومان</span>
+                    </div>
+                    <div class="clone position-absolute"></div>
+                </div>
+                <div class="timer position-absolute text-white">
+
+                    <span class="timeStr text-dark mx-2">24:12:23:54</span><i class="fas fa-clock text-danger"></i>
+                </div>
+            </div>
+            <div class="test rounded-4 position-relative">
+                <div class="imageParentSidebar">
+                    <img src="images/categoryPic.jpg" class="rounded-4" alt="">
+                </div>
+                <div class="position-absolute rounded-4 teflon"></div>
+                <div class="DetailProductSideBar position-absolute" style="z-index: 11111">
+                    <span class="nameProduct d-block">ست سرویس بهداشتی مدل تکسوس</span>
+                    <div class="d-flex justify-content-between pricesBox">
+                        <span class="text-white">1400 تومان</span>
+                        <span class="text-white">1200 تومان</span>
+                    </div>
+                    <div class="clone position-absolute"></div>
+                </div>
+                <div class="timer position-absolute text-white">
+
+                    <span class="timeStr text-dark mx-2">24:12:23:54</span><i class="fas fa-clock text-danger"></i>
+                </div>
+            </div>
+            <div class="test rounded-4 position-relative">
+                <div class="imageParentSidebar">
+                    <img src="images/categoryPic.jpg" class="rounded-4" alt="">
+                </div>
+                <div class="position-absolute rounded-4 teflon"></div>
+                <div class="DetailProductSideBar position-absolute" style="z-index: 11111">
+                    <span class="nameProduct d-block">ست سرویس بهداشتی مدل تکسوس</span>
+                    <div class="d-flex justify-content-between pricesBox">
+                        <span class="text-white">1400 تومان</span>
+                        <span class="text-white">1200 تومان</span>
+                    </div>
+                    <div class="clone position-absolute"></div>
+                </div>
+                <div class="timer position-absolute text-white">
+
+                    <span class="timeStr text-dark mx-2">24:12:23:54</span><i class="fas fa-clock text-danger"></i>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<div class="col-12 my-5">
+    <h4 class="text-center">گروه <strong>محصولات</strong></h4>
+    <div class="col-12 d-flex flex-wrap mx-auto">
+        <div class="col-md-2 col-4 position-relative">
+            <div class="parentCategoryPic w-100 h-100">
+                <img src="images/categoryPic.jpg" class="rounded-3" alt="">
+            </div>
+            <div class="cover position-absolute rounded-3" style=""></div>
+        </div>
+        <div class="col-md-2 col-4 position-relative">
+            <div class="parentCategoryPic w-100 h-100">
+                <img src="images/categoryPic.jpg" class="rounded-3" alt="">
+            </div>
+            <div class="cover position-absolute rounded-3"></div>
+        </div>
+        <div class="col-md-2 col-4 position-relative">
+            <div class="parentCategoryPic w-100 h-100">
+                <img src="images/categoryPic.jpg" class="rounded-3" alt="">
+            </div>
+            <div class="cover position-absolute rounded-3"></div>
+        </div>
+        <div class="col-md-2 col-4 position-relative">
+            <div class="parentCategoryPic w-100 h-100">
+                <img src="images/categoryPic.jpg" class="rounded-3" alt="">
+            </div>
+            <div class="cover position-absolute rounded-3"></div>
+        </div>
+        <div class="col-md-2 col-4 position-relative">
+            <div class="parentCategoryPic w-100 h-100">
+                <img src="images/categoryPic.jpg" class="rounded-3" alt="">
+            </div>
+            <div class="cover position-absolute rounded-3" ></div>
+        </div>
+        <div class="col-md-2 col-4 position-relative">
+            <div class="parentCategoryPic w-100 h-100">
+                <img src="images/categoryPic.jpg" class="rounded-3" alt="">
+            </div>
+            <div class="cover position-absolute rounded-3"></div>
+        </div>
+    </div>
+    <div class="col-12 d-flex flex-wrap mx-auto">
+        <div class="col-md-2 col-4 position-relative">
+            <div class="parentCategoryPic w-100 h-100">
+                <img src="images/categoryPic.jpg" class="rounded-3" alt="">
+            </div>
+            <div class="cover position-absolute rounded-3"></div>
+        </div>
+        <div class="col-md-2 col-4 position-relative">
+            <div class="parentCategoryPic w-100 h-100">
+                <img src="images/categoryPic.jpg" class="rounded-3" alt="">
+            </div>
+            <div class="cover position-absolute rounded-3"></div>
+        </div>
+        <div class="col-md-2 col-4 position-relative">
+            <div class="parentCategoryPic w-100 h-100">
+                <img src="images/categoryPic.jpg" class="rounded-3" alt="">
+            </div>
+            <div class="cover position-absolute rounded-3"></div>
+        </div>
+        <div class="col-md-2 col-4 position-relative">
+            <div class="parentCategoryPic w-100 h-100">
+                <img src="images/categoryPic.jpg" class="rounded-3" alt="">
+            </div>
+            <div class="cover position-absolute rounded-3"></div>
+        </div>
+        <div class="col-md-2 col-4 position-relative">
+            <div class="parentCategoryPic w-100 h-100">
+                <img src="images/categoryPic.jpg" class="rounded-3" alt="">
+            </div>
+            <div class="cover position-absolute rounded-3"></div>
+        </div>
+        <div class="col-md-2 col-4 position-relative">
+            <div class="parentCategoryPic w-100 h-100">
+                <img src="images/categoryPic.jpg" class="rounded-3" alt="">
+            </div>
+            <div class="cover position-absolute rounded-3"></div>
+        </div>
+    </div>
+</div>
+<div class="col-12 d-flex flex-md-row flex-column justify-content-md-around justify-content-center advertiseParent">
+    <div class="d-flex justify-content-center align-items-center bg-secondary rounded-3 bg-opacity-25 advertiseBanner">بنر تبلیغاتی</div>
+    <div class="d-flex justify-content-center align-items-center bg-secondary  rounded-3 bg-opacity-25 advertiseBanner">بنر تبلیغاتی</div>
+</div>
+<div class="col-12 my-5 position-relative">
+    <div class="col-11 d-flex justify-content-between mx-auto position-absolute rounded-4 bannerSectionWc">
+        <div class="col-3 chevronsGroup">
+            <i class="fas fa-chevron-right"></i>
+            <i class="fas fa-chevron-left"></i>
+        </div>
+        <div class="col-3 d-flex fw-bolder text-dark titleOfBanner">ست سرویس بهداشتی</div>
+        <div class="col-3 allProduct d-flex justify-content-end">
+            <div class="bg-white">
+                مشاهده همه
+                <i class="fas fa-chevron-left"></i>
+            </div>
+        </div>
+    </div>
+    <div class="col-12 d-flex mt-3 flex-wrap">
+        <div class="col-md-3 col-6 parentWcParent">
+            <img src="images/categoryPic.jpg" class="rounded-3" alt="">
+            <div class="priseSection">
+                <span class="nameOfProductWc text-center fw-bold d-block mt-3">عنوان محصول مورد نظر در این قسمت قرار میگیرد</span>
+                <div class="d-flex justify-content-center text-dark my-3">
+                    <span>740000</span>
+                </div>
+            </div>
+        </div>
+        <div class="col-md-3 col-6 parentWcParent">
+            <img src="images/categoryPic.jpg" class="rounded-3" alt="">
+            <div class="priseSection">
+                <span class="nameOfProductWc text-center fw-bold d-block mt-3">عنوان محصول مورد نظر در این قسمت قرار میگیرد</span>
+                <div class="d-flex justify-content-around text-dark my-3">
+                    <span>740000</span>
+                    <span class="text-decoration-line-through text-opacity-25 text-secondary">100000</span>
+                </div>
+            </div>
+        </div>
+        <div class="col-md-3 col-6 parentWcParent">
+            <img src="images/categoryPic.jpg" class="rounded-3" alt="">
+            <div class="priseSection">
+                <span class="nameOfProductWc text-center fw-bold d-block mt-3">عنوان محصول مورد نظر در این قسمت قرار میگیرد</span>
+                <div class="d-flex justify-content-center text-dark my-3">
+                    <span>740000</span>
+                </div>
+            </div>
+        </div>
+        <div class="col-md-3 col-6 parentWcParent">
+            <img src="images/categoryPic.jpg" class="rounded-3" alt="">
+            <div class="priseSection">
+                <span class="nameOfProductWc text-center fw-bold d-block mt-3">عنوان محصول مورد نظر در این قسمت قرار میگیرد</span>
+                <div class="d-flex justify-content-center text-dark my-3">
+                    <span>740000</span>
+                </div>
+            </div>
+        </div>
+
+    </div>
+</div>
+<div class="col-12 d-flex flex-md-row flex-column justify-content-md-evenly justify-content-center advertiseSecondPart">
+    <div class="d-flex justify-content-center align-items-center advertiseSecondBox rounded-3 bg-secondary bg-opacity-25 text-dark mx-auto mx-md-0 mt-md-0 mt-3">بنر تبلیغاتی</div>
+    <div class="d-flex justify-content-center align-items-center advertiseSecondBox rounded-3 bg-secondary bg-opacity-25 text-dark mx-auto mx-md-0 mt-md-0 mt-3">بنر تبلیغاتی</div>
+    <div class="d-flex justify-content-center align-items-center advertiseSecondBox rounded-3 bg-secondary bg-opacity-25 text-dark mx-auto mx-md-0 mt-md-0 mt-3">بنر تبلیغاتی</div>
+</div>
+<div class="col-12 my-5 position-relative">
+    <div class="col-11 d-flex justify-content-between mx-auto position-absolute rounded-4 bannerSectionWc">
+        <div class="col-3 chevronsGroup">
+            <i class="fas fa-chevron-right"></i>
+            <i class="fas fa-chevron-left"></i>
+        </div>
+        <div class="col-3 d-flex fw-bolder text-dark titleOfBanner">عنوان دسته بندی</div>
+        <div class="col-3 allProduct d-flex justify-content-end">
+            <div class="bg-white">
+                مشاهده همه
+                <i class="fas fa-chevron-left"></i>
+            </div>
+        </div>
+    </div>
+    <div class="col-12 d-flex mt-3 flex-wrap">
+        <div class="col-md-3 col-6 parentWcParent">
+            <img src="images/categoryPic.jpg" class="rounded-3" alt="">
+            <div class="priseSection">
+                <span class="nameOfProductWc text-center fw-bold d-block mt-3">عنوان محصول مورد نظر در این قسمت قرار میگیرد</span>
+                <div class="d-flex justify-content-center text-dark my-3">
+                    <span>740000</span>
+                </div>
+            </div>
+        </div>
+        <div class="col-md-3 col-6 parentWcParent">
+            <img src="images/categoryPic.jpg" class="rounded-3" alt="">
+            <div class="priseSection">
+                <span class="nameOfProductWc text-center fw-bold d-block mt-3">عنوان محصول مورد نظر در این قسمت قرار میگیرد</span>
+                <div class="d-flex justify-content-around text-dark my-3">
+                    <span>740000</span>
+                    <span class="text-decoration-line-through text-opacity-25 text-secondary">100000</span>
+                </div>
+            </div>
+        </div>
+        <div class="col-md-3 col-6 parentWcParent">
+            <img src="images/categoryPic.jpg" class="rounded-3" alt="">
+            <div class="priseSection">
+                <span class="nameOfProductWc text-center fw-bold d-block mt-3">عنوان محصول مورد نظر در این قسمت قرار میگیرد</span>
+                <div class="d-flex justify-content-center text-dark my-3">
+                    <span>740000</span>
+                </div>
+            </div>
+        </div>
+        <div class="col-md-3 col-6 parentWcParent">
+            <img src="images/categoryPic.jpg" class="rounded-3" alt="">
+            <div class="priseSection">
+                <span class="nameOfProductWc text-center fw-bold d-block mt-3">عنوان محصول مورد نظر در این قسمت قرار میگیرد</span>
+                <div class="d-flex justify-content-center text-dark my-3">
+                    <span>740000</span>
+                </div>
+            </div>
+        </div>
+
+    </div>
+</div>
+<div class="col-12 my-5 position-relative">
+    <div class="col-11 d-flex justify-content-between mx-auto position-absolute rounded-4 bannerSectionWc">
+        <div class="col-3 chevronsGroup">
+            <i class="fas fa-chevron-right"></i>
+            <i class="fas fa-chevron-left"></i>
+        </div>
+        <div class="col-3 d-flex fw-bolder text-dark titleOfBanner">عنوان دسته بندی</div>
+        <div class="col-3 allProduct d-flex justify-content-end">
+            <div class="bg-white">
+                مشاهده همه
+                <i class="fas fa-chevron-left"></i>
+            </div>
+        </div>
+    </div>
+    <div class="col-12 d-flex mt-3 flex-wrap">
+        <div class="col-md-3 col-6 parentWcParent">
+            <img src="images/categoryPic.jpg" class="rounded-3" alt="">
+            <div class="priseSection">
+                <span class="nameOfProductWc text-center fw-bold d-block mt-3">عنوان محصول مورد نظر در این قسمت قرار میگیرد</span>
+                <div class="d-flex justify-content-center text-dark my-3">
+                    <span>740000</span>
+                </div>
+            </div>
+        </div>
+        <div class="col-md-3 col-6 parentWcParent">
+            <img src="images/categoryPic.jpg" class="rounded-3" alt="">
+            <div class="priseSection">
+                <span class="nameOfProductWc text-center fw-bold d-block mt-3">عنوان محصول مورد نظر در این قسمت قرار میگیرد</span>
+                <div class="d-flex justify-content-around text-dark my-3">
+                    <span>740000</span>
+                    <span class="text-decoration-line-through text-opacity-25 text-secondary">100000</span>
+                </div>
+            </div>
+        </div>
+        <div class="col-md-3 col-6 parentWcParent">
+            <img src="images/categoryPic.jpg" class="rounded-3" alt="">
+            <div class="priseSection">
+                <span class="nameOfProductWc text-center fw-bold d-block mt-3">عنوان محصول مورد نظر در این قسمت قرار میگیرد</span>
+                <div class="d-flex justify-content-center text-dark my-3">
+                    <span>740000</span>
+                </div>
+            </div>
+        </div>
+        <div class="col-md-3 col-6 parentWcParent">
+            <img src="images/categoryPic.jpg" class="rounded-3" alt="">
+            <div class="priseSection">
+                <span class="nameOfProductWc text-center fw-bold d-block mt-3">عنوان محصول مورد نظر در این قسمت قرار میگیرد</span>
+                <div class="d-flex justify-content-center text-dark my-3">
+                    <span>740000</span>
+                </div>
+            </div>
+        </div>
+
+    </div>
+</div>
+<div class=" d-flex justify-content-center align-items-center bg-secondary text-dark rounded-3 mx-auto bg-opacity-25 lastAdvertiseBanner">بنر تبلیغاتی</div>
+<div class="col-12 mt-5 position-relative spacingLast">
+    <div class="col-11 mx-auto position-absolute rounded-4 bannerSectionWc text-center extraPropsTitle">
+        <div class="d-flex justify-content-center">
+            اخبار و <strong>مقالات</strong>
+        </div>
+    </div>
+    <div class="col-12 d-flex flex-md-row flex-column justify-content-center">
+        <div class="blogCard rounded-3">
+            <div class="parentBlogOic">
+                <img src="images/1.jpg" class="d-block" alt="">
+            </div>
+
+            <div class="descriptionBlog">
+                <span class="titleBlog text-dark d-block px-3 py-3 fw-bold">لورم ایپسوم متن ساختگی با تولید سادگی نامفهوملورم ایپسوم متن ساختگی بانامفهوم</span>
+                <p class="text-secondary px-3 py-1">
+                    لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ و با استفاده از طراحان گرافیک است. چاپگرها و متون بلکه روزنامه و مجله در ستون و سطرآنچنان که لازم است و برای شرایط فعلی تکنولوژی مورد نیاز و کاربردهای متنوع با هدف بهبود ابزارهای کاربردی می باشد. کتابهای زیادی در شصت و سه درصد گذشته، حال و
+                </p>
+                <span class="d-block px-3 pb-3">دسته بندی اخبار</span>
+            </div>
+        </div>
+        <div class="blogCard rounded-3 mt-md-0 mt-3">
+            <div class="parentBlogOic">
+                <img src="images/1.jpg" class="d-block" alt="">
+            </div>
+
+            <div class="descriptionBlog">
+                <span class="titleBlog text-dark d-block px-3 py-3 fw-bold">لورم ایپسوم متن ساختگی با تولید سادگی نامفهوملورم ایپسوم متن ساختگی بانامفهوم</span>
+                <p class="text-secondary px-3 py-1">
+                    لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ و با استفاده از طراحان گرافیک است. چاپگرها و متون بلکه روزنامه و مجله در ستون و سطرآنچنان که لازم است و برای شرایط فعلی تکنولوژی مورد نیاز و کاربردهای متنوع با هدف بهبود ابزارهای کاربردی می باشد. کتابهای زیادی در شصت و سه درصد گذشته، حال و
+                </p>
+                <span class="d-block px-3 pb-3">دسته بندی اخبار</span>
+            </div>
+        </div>
+        <div class="blogCard rounded-3 mt-md-0 mt-3">
+            <div class="parentBlogOic">
+                <img src="images/1.jpg" class="d-block" alt="">
+            </div>
+
+            <div class="descriptionBlog">
+                <span class="titleBlog text-dark d-block px-3 py-3 fw-bold">لورم ایپسوم متن ساختگی با تولید سادگی نامفهوملورم ایپسوم متن ساختگی بانامفهوم</span>
+                <p class="text-secondary px-3 py-1">
+                    لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ و با استفاده از طراحان گرافیک است. چاپگرها و متون بلکه روزنامه و مجله در ستون و سطرآنچنان که لازم است و برای شرایط فعلی تکنولوژی مورد نیاز و کاربردهای متنوع با هدف بهبود ابزارهای کاربردی می باشد. کتابهای زیادی در شصت و سه درصد گذشته، حال و
+                </p>
+                <span class="d-block px-3 pb-3">دسته بندی اخبار</span>
+            </div>
+        </div>
+    </div>
+    <div class="col-11 position-absolute mx-auto rounded-4 lastDesign">
+        <div class="col-12 d-flex mt-3 mt-md-3">
+            <div class="col-6 chevrounGroupFinal">
+                <i class="fas fa-chevron-right bg-white m-0 p-0"></i>
+                <i class="fas fa-chevron-left bg-white m-0 p-0"></i>
+            </div>
+            <div class="col-6 text-start" style=" color: gainsboro;">
+
+                <span class=" bg-white">مشاهده همه</span>
+                <i class="fas fa-chevron-left  bg-white"></i>
+            </div>
+        </div>
+    </div>
+</div>
+<div class="col-12 mt-5">
+    <div class="d-flex justify-content-center align-items-center">
+        <span class="IdInstagram text-dark">instagramIsNotValid@</span>
+        <img src="images/instagram.png" class="logoInstagram" alt="">
+    </div>
+    <span class="ourSent text-center text-dark d-block my-3">لورم ایپسوم متن ساختگی با تولید سادگی</span>
+</div>
+
+<div class="owlItem">
+    <div class="owl-carousel owl-theme owlCarouselCustom">
+        <div class="slideBarLastSize rounded-4 position-relative">
+            <div class="imageParentSidebar">
+                <img src="images/categoryPic.jpg" class="rounded-4" alt="">
+            </div>
+
+        </div>
+        <div class="slideBarLastSize rounded-4 position-relative">
+            <div class="imageParentSidebar">
+                <img src="images/categoryPic.jpg" class="rounded-4" alt="">
+            </div>
+
+        </div>
+        <div class="slideBarLastSize rounded-4 position-relative">
+            <div class="imageParentSidebar">
+                <img src="images/categoryPic.jpg" class="rounded-4" alt="">
+            </div>
+
+        </div>
+        <div class="slideBarLastSize rounded-4 position-relative">
+            <div class="imageParentSidebar">
+                <img src="images/categoryPic.jpg" class="rounded-4" alt="">
+            </div>
+
+        </div>
+        <div class="slideBarLastSize rounded-4 position-relative">
+            <div class="imageParentSidebar">
+                <img src="images/categoryPic.jpg" class="rounded-4" alt="">
+            </div>
+
+        </div>
+        <div class="slideBarLastSize rounded-4 position-relative">
+            <div class="imageParentSidebar">
+                <img src="images/categoryPic.jpg" class="rounded-4" alt="">
+            </div>
+
+        </div>
+        <div class="slideBarLastSize rounded-4 position-relative">
+            <div class="imageParentSidebar">
+                <img src="images/categoryPic.jpg" class="rounded-4" alt="">
+            </div>
+
+        </div>
+        <div class="slideBarLastSize rounded-4 position-relative">
+            <div class="imageParentSidebar">
+                <img src="images/categoryPic.jpg" class="rounded-4" alt="">
+            </div>
+
+        </div>
+        <div class="slideBarLastSize rounded-4 position-relative">
+            <div class="imageParentSidebar">
+                <img src="images/categoryPic.jpg" class="rounded-4" alt="">
+            </div>
+
+        </div>
+        <div class="slideBarLastSize rounded-4 position-relative">
+            <div class="imageParentSidebar">
+                <img src="images/categoryPic.jpg" class="rounded-4" alt="">
+            </div>
+
+        </div>
+    </div>
+</div>
+<footer class="col-12">
+    <div class="col-12 d-flex flex-xl-row flex-column py-3 ms-xl-3 ms-0">
+        <div class="col-xl-3 col-12 d-flex logoFooter my-3 me-2 d-xl-block d-flex justify-content-center">
+            <div class="logo d-flex justify-content-center align-items-center text-dark">لوگو</div>
+        </div>
+        <div class="col-xl-6 col-12 d-flex mt-4 me-xl-0 me-5">
+            <div class="col-4">
+                <ul class="listsFooter">
+                    <li class="text-dark text-white headerCategory fw-bold">لینک های دسترسی</li>
+                    <li class="text-dark text-white listType ">لینک های دسترسی</li>
+                    <li class="text-dark text-white listType">لینک های دسترسی</li>
+                    <li class="text-dark text-white listType">لینک های دسترسی</li>
+                    <li class="text-dark text-white listType">لینک های دسترسی</li>
+                    <li class="text-dark text-white listType">لینک های دسترسی</li>
+                </ul>
+            </div>
+            <div class="col-4">
+                <ul class="listsFooter">
+                    <li class="text-dark text-white headerCategory fw-bold">لینک های دسترسی</li>
+                    <li class="text-dark text-white listType ">لینک های دسترسی</li>
+                    <li class="text-dark text-white listType">لینک های دسترسی</li>
+                    <li class="text-dark text-white listType">لینک های دسترسی</li>
+                    <li class="text-dark text-white listType">لینک های دسترسی</li>
+                    <li class="text-dark text-white listType">لینک های دسترسی</li>
+                </ul>
+            </div>
+            <div class="col-4">
+                <ul class="listsFooter">
+                    <li class="text-dark text-white headerCategory fw-bold">لینک های دسترسی</li>
+                    <li class="text-dark text-white listType ">لینک های دسترسی</li>
+                    <li class="text-dark text-white listType">لینک های دسترسی</li>
+                    <li class="text-dark text-white listType">لینک های دسترسی</li>
+                    <li class="text-dark text-white listType">لینک های دسترسی</li>
+                    <li class="text-dark text-white listType">لینک های دسترسی</li>
+                </ul>
+            </div>
+        </div>
+        <div class="col-8 mt-4 d-none d-xl-block col-md-4 col-xl-3 d-flex logoFooter d-xl-block d-flex bg-white " style="
+">
+        <div class="logoPeace me-5 me-xl-0 d-flex">
+                <div class="col-6"><img src="images/logo.png" class="w-75" alt=""></div>
+                <div class="col-6"><img src="images/senf.png" class="w-75" alt=""></div>
+            </div>
+        </div>
+    </div>
+    <div class="line"></div>
+    <div class="col-12 d-flex flex-lg-row flex-column my-3">
+        <div class="col-xl-6 col-12">
+            <span class="titleContactUs fw-bold text-white d-block me-3">اطلاعات تماس</span>
+            <div class="col-12 d-flex">
+                <div class="col-6">
+                    <div class="me-5 contactUsDetail my-2">
+
+                        <span class="addressFooter text-white me-3 d-block"><i class="fab fa-instagram mx-2 text-white"></i>لورم ایپسوم متن ساختگی با  ایپسوم متن</span>
+                        <span class="commentSlo text-white me-3 d-block my-3">نظر دز این قسمت قرار خواد گرفت</span>
+                    </div>
+                </div>
+                <div class="col-6">
+                    <div class="emailBox mt-2">
+                        <i class="fas fa-location text-white"></i>
+                        <span class="text-white">tahajob1382@gmail.com</span>
+                    </div>
+                    <div class="emailBox mt-3">
+                        <i class="fas fa-phone text-white"></i>
+                        <span class="text-white">09393545718</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="col-xl-6 col-12">
+            <span class="text-white d-block text-center fw-bold">مارا  دنبال کنید</span>
+            <div class="col-12 d-flex justify-content-center justify-lg-content-end mt-4 mt-lg-3">
+                <div class="col-1 mx-2 parentSocialMedia"><img src="images/instagram.png" alt=""></div>
+                <div class="col-1 mx-2 parentSocialMedia"><img src="images/instagram.png" alt=""></div>
+                <div class="col-1 mx-2 parentSocialMedia"><img src="images/instagram.png" alt=""></div>
+                <div class="col-1 mx-2 parentSocialMedia"><img src="images/instagram.png" alt=""></div>
+                <div class="col-1 mx-2 parentSocialMedia"><img src="images/instagram.png" alt=""></div>
+            </div>
+        </div>
+    </div>
+    <div class="line mt-3"></div>
+    <div class="mx-auto mt-3 d-flex justify-content-center align-items-center lastFooterSection">
+        <div class="col-4">
+            <span class="text-white">با عضویت در خبرنامه ما همره بروز باشید</span>
+        </div>
+        <div class="col-8 my-3 d-flex justify-content-around flex-xl-row flex-column">
+            <div class="col-xl-5 col-me-8 col-12 my-3 rounded-4 d-flex justify-content-end" style="height: 3rem;background-color: #fff;">
+                <div class="col-9">
+                    <input type="text" class="form-control formControlCustom" placeholder=" شماره تماس خود وارد کنید ">
+                </div>
+                <div class="col-2">
+                    <button class="btn btn-danger rounded-4 col-12 me-0 h-100" style="width: 97% !important;height: 100% !important;margin-left: 1%;">ثبت</button>
+                </div>
+            </div>
+            <div class="col-xl-5 col-me-8 col-12 my-3 rounded-4 d-flex justify-content-end" style="height: 3rem;background-color: #fff;">
+                <div class="col-9">
+                    <input type="text" class="form-control formControlCustom" placeholder=" شماره تماس خود وارد کنید ">
+                </div>
+                <div class="col-2">
+                    <button class="btn btn-danger rounded-4 col-12 me-0 h-100" style="width: 97% !important;height: 100% !important;margin-left: 1%;">ثبت</button>
+                </div>
+            </div>
+        </div>
+    </div>
+</footer>
+
+
+<script src="node_modules/jquery/dist/jquery.js"></script>
+<script src="node_modules/bootstrap/dist/js/bootstrap.js"></script>
+<script src="node_modules/owl.carousel2/dist/owl.carousel.js"></script>
+<script src="js/script.js"></script>
+<script>
+    var $owl = $('.owlItem .owl-carousel');
+
+    $owl.on('initialized.owl.carousel resized.owl.carousel', function(e) {
+        $(e.target).toggleClass('hide-nav', e.item.count <= e.page.size);
+    });
+    $owl.owlCarousel({
+        loop:true,
+        margin:10,
+        rtl:true,
+        // responsiveClass:true,
+        autoWidth:true,
+        autoHeight:true,
+        dots:false,
+        navText : ["<i class='fa fa-chevron-right d-none'></i>","<i class='fa fa-chevron-left d-none'></i>"],
+        responsive:{
+            0:{
+                items:1,
+                nav:true,
+                loop:true,
+            },
+            600:{
+                items:3,
+                nav:true,
+                loop:true,
+            },
+            1000:{
+                items:5,
+                nav:true,
+                loop:true
+            },
+            900:{
+                nav:true,
+                loop:true
+            },
+            800:{
+                nav:true,
+                loop:true
+            },
+            700:{
+                nav:true,
+                loop:true
+            },
+            1100:{
+                nav:true,
+                loop:true
+            }
+        }
+    })
+</script>
+</body>
+</html>
